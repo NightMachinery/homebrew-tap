@@ -1,6 +1,6 @@
 cask "syncplayu" do
-  version "1.7.7-night.2"
-  sha256 "3151d196c4301120de8d4a9112ddcb087e943a7f49e0bcddbc7cf8f2408ea529"
+  version "1.7.7-night.3"
+  sha256 "c18d1c6b0a9e4dd28096d5e3ad3c3f6ab5070158463c9b7c7415303d952dec64"
 
   url "https://github.com/NightMachinery/syncplay/releases/download/v#{version}/SyncPlayU-macOS.dmg"
   name "SyncPlayU"
