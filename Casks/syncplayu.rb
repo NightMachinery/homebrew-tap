@@ -11,4 +11,17 @@ cask "syncplayu" do
   depends_on macos: :sonoma
 
   app "SyncPlayU.app"
+
+  caveats <<~EOS
+    The current SyncPlayU build is ad-hoc signed and unnotarized.
+    If macOS blocks it, try opening it, then choose Open Anyway in
+    System Settings → Privacy & Security.
+
+    If macOS still blocks your copy from this tap, remove its quarantine
+    attribute in Terminal, then try opening it again:
+
+      xattr -d com.apple.quarantine /Applications/SyncPlayU.app
+
+    Adjust the path if you used a custom app directory.
+  EOS
 end
